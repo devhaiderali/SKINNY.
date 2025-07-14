@@ -1,1 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+#nav {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    align-items: center;
+    padding: 0px 38px;
+}
+
+.logo {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.links {
+    display: flex;
+    gap: 40px;
+    padding: 22px 60px;
+    display: flex;
+    align-items: center;
+}
+
+.links>a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.links a:last-child {
+    border-radius: 40px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/* home section starts */
+
+#home {
+    height: 89%;
+    width: 100%;
+}
+
+.txt {
+    color: rgb(0, 0, 0);
+}
+
+.txt>h1 {
+    padding-top: 100px;
+    padding-left: 65px;
+    font-size: 5rem;
+    line-height: 5rem;
+    letter-spacing: -2px;
+    word-spacing: 2px;
+    font-weight: 400;
+    font-family: "Roboto";
+    text-transform: uppercase;
+}
+
+.txt>p {
+    padding: 25px 70px;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Roboto";
+    /* text-transform: uppercase; */
+}
+
+span {
+    font-weight: bold;
+}
+
+#main-img {
+    position: absolute;
+    right: 8%;
+    top: 30%;
+    transform: scale(1.5);
+}
+
+.ppl {
+    position: absolute;
+    display: flex;
+    left: 4%;
+    width: 30%;
+}
+
+.ppl img {
+    width: 150px;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+}
+
+.ppl>h5 {
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "Roboto";
+    margin-top: 28px;
+    margin-left: 15px;
+}
+
+/* home section ends */
+
+/* product section starts */
+
+#product {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    /* background-color: cadetblue;                 */
+}
+
+
+.left-text {
+    height: 150px;
+    width: 200px;
+    text-transform: uppercase;
+    margin: 0px 65px;
+    padding: 50px 0px;
+}
+
+.mid-text {
+    height: 130px;
+    width: 200px;
+    /* background-color: tomato; */
+    margin-left: 20%;
+    margin-top: 4%;
+    padding: 10px;
+    gap: 10px;
+}
+
+.mid-text>h5 {
+    margin-top: 5%;
+    font-weight: 400;
+}
+
+.ri-image-ai-fill {
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.right-text {
+    height: 130px;
+    width: 200px;
+    /* background-color: tomato; */
+    margin-left: 22%;
+    margin-top: 4%;
+    padding: 10px;
+    gap: 10px;
+}
+
+.right-text>h5 {
+    margin-top: 5%;
+    font-weight: 400;
+}
+
+.ri-image-fill {
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+/* product section ends */
+
+/* popular pro stocks */
+
+#pps {
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#black-part {
+    width: 92%;
+    /* min-height: 100%; */
+    height: 100%;
+    margin-top: 50x;
+    background-color: #000000;
+    border-radius: 10px;
+    position: relative;
+}
+
+#black-part>h2 {
+    color: white;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#black-part>p {
+    color: rgba(255, 255, 255, 0.808);
+    padding-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ffffffdc;
+    border-radius: 999px;
+    padding: 5px 10px;
+    width: 450px;
+    margin: 24px 380px;
+}
+
+.category-button {
+    background-color: #000000;
+    color: #ccc;
+    border: 1px solid #ffffffab;
+    border-radius: 999px;
+    padding: 6px 12px;
+    margin-left: -6px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.category-button .ri-arrow-right-down-line {
+    margin-left: 8px;
+    font-size: 18px;
+}
+
+.search-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #faf8f8;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.search-input::placeholder {
+    color: rgba(245, 245, 245, 0.938);
+}
+
+.ri-search-line {
+    background: none;
+    border: none;
+    color: #ccc;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 6px;
+}
+
+#three-txt {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
+    padding: 20px 10px;
+    width: 90%;
+    height: 50px;
+    margin-left: 50px;
+    margin-top: -35px;
+}
+
+#three-txt>h5 {
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#three-txt h5:last-of-type {
+    color: rgb(250, 250, 250);
+    margin-left: 893px;
+}
+
+.plum {
+    color: plum;
+}
+
+#cards {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card1 {
+    width: 25%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.918);
+    border-radius: 20px;
+}
+
+.card1 img {
+    background-position: center;
+    background-size: cover;
+    width: 97%;
+    height: 70%;
+    padding: 10px 10px;
+}
+
+.card1>h5 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 35%;
+    margin-top: 8px;
+}
+
+.card2 {
+    width: 25%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.918);
+    border-radius: 20px;
+}
+
+.card2 img {
+    background-position: center;
+    background-size: cover;
+    width: 97%;
+    height: 70%;
+    padding: 10px 10px;
+}
+
+.card2>h5 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.card3 {
+    width: 25%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.918);
+    border-radius: 20px;
+}
+
+.card3 img {
+    background-position: center;
+    background-size: cover;
+    width: 97%;
+    height: 70%;
+    padding: 10px 10px;
+}
+
+.card3>h5 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#black-part>button {
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    left: 45%;
+    top: 85%;
+    margin: 10px auto;
+    display: block;
+    
+    
+}
+
+.ri-arrow-right-line {
+    margin-left: 8px;
+    font-size: 18px;
+    text-align: center;
+    justify-content: center;
+}
+
+#order-skin {
+    width: 100%;
+    height: 80%;
+    background-color: cadetblue;
+}
